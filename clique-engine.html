@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Guillermo Arnau</title>
+	<link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
+
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<br>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+			<h1>Clique Engine</h1>
+		</div>
+		
+		<div class="col-md-6" align="right">
+			<h6>Diseño e implementación, en desarrollo</h6>	
+		</div>
+	</div>
+
+	<p>
+		Clique Engine es un proyecto de aprendizaje con el que pretendo explorar el complejo mundo de los motores de videojuegos programando un pequeño <strong>motor 2D</strong>,
+		llamado claramente Clique Engine. Siempre me ha atraído la idea de crear mi propio motor, gracias a esa inquietud he leído y aprendido mucho grácias artículos de personas que llevan
+		años trabajando en este tipo de tecnologías en los que defienden algunas arquitecturas o explican cómo funcionanlas cosas a nivel interno.
+		
+		<br><br>
+
+		Además, gracias a los proyectos de código abierto como <a href="https://godotengine.org/">Godot</a> o <a href="https://www.stride3d.net/">Stride</a> he podido
+		ver de primera mano el código fuente de otros motores, aventurándome en alguna ocasión que otra a hacer 'pull requests' o propuestas de mejora.
+
+		<br><br>
+
+		Con todo esto, finalmente, me he decidido a empezar un proyecto con el que pretendo sobre todo aprender, la intención no es crear el motor perfecto, ni siquiera
+		un motor con muchas funcionalidades ni nada por el estilo, sino ir probando diferentes arquiecturas para ser capaz de entender mejor cómo
+		funcionan los sistemas en los motores.
+
+		Con las pruebas, la idea es ir perfilando el tipo de motor que quiero hacer e ir poco a poco perfeccionando el código para que quede lo más
+		cohesionado y simple posible.
+
+		<br><br>
+
+		El motor ya cuenta con una primera versión, en esta, he decidido NO utilizar el Enity-Component-System (ECS) sino que he optado por una
+		propuesta más inspirada en la herencia de clases de Godot.
+
+		<br><br>
+
+		El resultado de este primer sprint es un sistema de UI propio con el que he hecho la misma interfaz del motor, un sistema de eventos que
+		controla el input, el renderizado 2D o un editor con el que podemos manipular objetos en tiempo real, pausar y ver las propiedades de las
+		clases. Y esto es solo lo que se ve a simple vista ya que por debajo hay muuuchas otras cosas.
+
+		A continuaión un pequeño vídeo de demostración.
+	</p>
+
+
+	<div class="row">
+		<div class="col-md-12">
+			<div align="center">
+				<video autoplay controls loop width="100%"><source src="files/clique-engine/overview.mp4" type="video/mp4"></video>
+			</div>
+		</div>
+	</div>
+
+	<br>
+
+	<p>
+		Este es un pequeño diagrama-resumen de la arquitectura que he diseñado e implementado en esta primera ocasión.
+	</p>
+
+	<img class="img-fluid" src="files/clique-engine/architecture-v1.png"><img>
+
+	<br>
+
+	<p>
+		Y esto, un vídeo de de muchas ranas, que nunca está de más. La verdad es que no recuerdo ni cuántos objetos hay ni cuántos fps sacaba en
+		este ejemplo, solo sé que más de 60 en un portátil con más de siete años. En el vídeo pueden parecer menos, es por la propia calidad de éste.
+	</p>
+
+	<div class="row">
+		<div class="col-md-12">
+			<div align="center">
+				<video controls loop width="100%"><source src="files/clique-engine/clique-engine-frogs.mp4" type="video/mp4"></video>
+			</div>
+		</div>
+	</div>
+
+
+</div>
+
+<br>
+
+</body>
+</html>

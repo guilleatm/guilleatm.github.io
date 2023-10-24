@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Guillermo Arnau</title>
+	<link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
+
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<br>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+			<h1>Herramientas</h1>
+		</div>
+		
+		<div class="col-md-6" align="right">
+			<h6>Diseño e implementación</h6>	
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<h2>Event Animator</h2>
+
+	<p>
+		<i>Event Animator</i> es una herramienta para Unity pensada para crear <strong>cinemáticas dinámicas</strong>, es decir, que no siempre tenemos por qué tener la misma cinemática, sino que dependiendo de diversos factores puede cambiar.
+	</p>
+	
+	<br>
+
+
+	<div class="row">
+		<div class="col-md-12">
+			<div class="center" align="center">
+				<video autoplay controls loop width="100%"><source src="files/tools/demo.mp4" type="video/mp4"></video>
+			</div>
+		</div>
+	</div>
+
+	<br>
+
+	<p>
+		En el vídeo podemos ver un pequeño ejemplo de un posible uso. El jugador se acerca hasta una zona que activa la <i>cinemática</i>, a partir de aquí, lo que va a pasar está predefinido.
+
+		La parte interesante de esto es que no es lo mismo que una cinemática convencional, si nos fijamos, no sabemos dónde va a estar el jugador a la hora de empezar la cinemática, el recorrido que hace puede ser diferente, pasa lo mismo con los diálogos, hasta que el jugador no pulsa, el diálogo no avanza, con lo que la duración de la cinemática cambia.
+
+
+		Esta herramienta es extremadamente poderosa ya que nos <strong>permite utilizar los métodos de los componentes desde el editor</strong>, parecido a lo que podemos hacer con los eventos pero con la ventaja de que <strong>podemos pasar cualquier número de argumentos y de cualquier tipo.</strong>
+
+		A continuación podemos ver cómo se nos mostraría el método SomeRandomFunction del componente TestComponent que está en el objeto MY_OBJECT.
+	</p>
+
+	<br>
+
+	<img class="img-fluid" src="files/tools/method.png"><img>
+
+	<br><br>
+
+	<img class="img-fluid" src="files/tools/overview-event-animator.png"><img>
+
+	<br><br>
+
+	<p>
+		En este otro vídeo podemos ver cómo se ha hecho la cinemática mostrada previamente y los valores de los <i>keyframes</i>.
+	</p>
+
+	<br>
+
+	<div class="row">
+		<div class="col-md-12">
+			<div class="center" align="center">
+				<video autoplay controls width="100%"><source src="files/tools/know-how.mp4" type="video/mp4"></video>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<hr>
+
+<div class="container">
+	<h2>GST Editor</h2>
+
+	<p>
+		El <i>GST Editor</i> o <i>Game State Tree Editor</i> es una herramienta para Unity con la que <strong>podemos crear una estructura de nodos que representa los estados de un juego</strong>. Con los estados creados, podremos transicionar entre ellos haciendo así que los elementos y sucesos de una escena sean distintos dependiendo del estado o fase en el que estemos dentro del juego. 
+	</p>
+
+	<br>
+
+	<img class="img-fluid" src="files/tools/graph.png"><img>
+
+	<br><br>
+
+	<p>
+		Un ejemplo de uso muy básico, podemos tener un estado que sea <i>TUTORIAL</i> y otro que sea <i>INICIO</i>, al acceder a una escena, el juego estaría es modo <i>TUTORIAL</i> y al terminarlo, cambiaría el estado a <i>INICIO</i>. La próxima vez que volvamos a esa misma escena, como estaremos en el estado <i>INICIO</i>, no saltará el tutorial.
+	</p>
+	
+	<br>
+
+	<p>
+		Esta herramienta nos <strong>permite preparar toda la lógica que dependa de la fase en la que estamos en el videojuego directamente desde el editor</strong>. Además, <strong>podemos tener varios árboles de estados</strong> y intercambiarlos ya que se utiliza un <i>ScriptableObject</i> como recurso para almacenar los datos.
+	</p>
+
+	<br>
+
+	<img class="img-fluid" src="files/tools/overview-gst-editor.png"><img>
+
+</div>
+
+<br>
+
+</body>
+</html>
