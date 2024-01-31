@@ -42,11 +42,36 @@
 		funcionan los sistemas en los motores.
 
 		Con las pruebas, la idea es ir perfilando el tipo de motor que quiero hacer e ir poco a poco perfeccionando el código para que quede lo más
-		cohesionado y simple posible.
+		cohesionado y simple posible. Iré publicando iteraciones con los avances.
 
-		<br><br>
+		(<a href="#it1">Ir a Iteración 1</a>)
 
-		El motor ya cuenta con una primera versión, en esta, he decidido NO utilizar el Enity-Component-System (ECS) sino que he optado por una
+		</p>
+
+		<h2>Iteración 2</h2>
+
+		<p>
+			En esta versión he implementado un sistema de interfaz mucho más robusto, en este caso, con la ayuda de Dear ImGui, esto nos permite dibujar eficientemente el ui en cada frame.
+			Además, al utilizar la rama docking, podemos personalizar facilmente el entorno de trabajo. Por ahora está implementada la consola pero crear nuevas ventanas personalizadas es muy sencillo
+			gracias a las clases <i>UIWindow</i> y <i>UIManager</i>. Esta primera clase es la base de la que hereda cualquier ventana del engine, el <i>UIManager</i> se encargará de gestionar las ventanas.
+		</p>
+
+		<div class="row">
+			<div class="col-md-12">
+				<div align="center">
+					<video autoplay controls loop width="100%"><source src="files/clique-engine/clique-engine-ui.mp4" type="video/mp4"></video>
+				</div>
+			</div>
+		</div>
+
+		<br>
+		<hr>
+
+		<h2 id="it1">Iteración 1</h2>
+
+		<p>
+
+		El motor cuenta con una primera versión, en esta, he decidido NO utilizar el Enity-Component-System (ECS) sino que he optado por una
 		propuesta más inspirada en la herencia de clases de Godot.
 
 		<br><br>
@@ -62,7 +87,7 @@
 	<div class="row">
 		<div class="col-md-12">
 			<div align="center">
-				<video autoplay controls loop width="100%"><source src="files/clique-engine/overview.mp4" type="video/mp4"></video>
+				<video controls loop width="100%"><source src="files/clique-engine/overview.mp4" type="video/mp4"></video>
 			</div>
 		</div>
 	</div>

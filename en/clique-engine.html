@@ -32,11 +32,39 @@
 
         <br><br>
 
-        With all of this, I've finally decided to start a project primarily for learning. The intention is not to create the perfect engine or one with many features. Instead, I aim to experiment with different architectures to better understand how systems work in engines.
+        I've finally decided to start a project primarily for learning. The intention is not to create the perfect engine or one with many features. Instead, I aim to experiment with different architectures to better understand how a game engines works.
 
-        Through experimentation, the idea is to refine the type of engine I want to create and gradually improve the code to make it as cohesive and simple as possible.
+        Through experimentation, the idea is to refine the type of engine I want to create and gradually improve the code to make it as cohesive
+		and simple as possible. I will be posting iterations with the progress.
+		<br>
+		(<a href="#it1">Go to iteration 1</a>)
 
-        <br><br>
+
+	</p>
+
+	<h2>Iteration 2</h2>
+
+	<p>
+		In this version, I have implemented a much more robust interface system, in this case, with the help of Dear ImGui.
+		This allows us to efficiently draw the UI on each frame. Additionally, by using the docking branch, we can easily customize
+		the workspace. For now, the console is implemented, but creating new custom windows is very simple thanks to the
+		<i>UIWindow</i> and <i>UIManager</i> classes. The <i>UIWindow</i> class serves as the foundation for any window in the
+		engine, and the <i>UIManager</i> is responsible for managing the windows.
+	</p>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div align="center">
+                <video autoplay controls loop width="100%"><source src="../files/clique-engine/clique-engine-ui.mp4" type="video/mp4"></video>
+            </div>
+        </div>
+    </div>
+
+	<hr>
+
+	<h2 id="it1">Iteration 1</h2>
+
+	<p>
 
         The engine already has a first version. In this version, I've chosen NOT to use the Entity-Component-System (ECS) but rather opted for an approach more inspired by class inheritance in Godot.
 
@@ -47,11 +75,10 @@
         Below is a short demonstration video.
     </p>
 
-
     <div class="row">
         <div class="col-md-12">
             <div align="center">
-                <video autoplay controls loop width="100%"><source src="../files/clique-engine/overview.mp4" type="video/mp4"></video>
+                <video controls loop width="100%"><source src="../files/clique-engine/overview.mp4" type="video/mp4"></video>
             </div>
         </div>
     </div>
