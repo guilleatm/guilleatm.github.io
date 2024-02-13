@@ -48,13 +48,82 @@
 
 		</p>
 
+		<h4>Características</h4>
+
+		<div class="row">
+			<div class="col-md-4">
+				<ul>
+					<li>ECS de alto rendimiento</li>
+					<li>Scripting nativo con c++</li>
+					<li>SDL2 integrado</li>
+					<li>Dear ImGui integrado</li>
+					<li>Editor personalizable</li>
+				</ul>
+			</div>
+			<div class="col-md-4">
+				<ul>
+					<li>Inspector</li>
+					<li>Árbol / Jerarquía</li>
+					<li>Consola</li>
+					<li>Depuración super simple</li>
+				</ul>
+			</div>
+			<div class="col-md-4">
+			</div>
+		</div>
+
+		<hr />
+
 		<h2>Iteración 2</h2>
 
 		<p>
-			En esta versión he implementado un sistema de interfaz mucho más robusto, en este caso, con la ayuda de Dear ImGui, esto nos permite dibujar eficientemente el ui en cada frame.
-			Además, al utilizar la rama docking, podemos personalizar facilmente el entorno de trabajo. Por ahora está implementada la consola pero crear nuevas ventanas personalizadas es muy sencillo
+			En esta versión he implementado un sistema de interfaz mucho más robusto, en este caso, con la ayuda de <a href="https://github.com/ocornut/imgui">Dear ImGui</a>, esto nos permite dibujar eficientemente el ui en cada frame.
+			Además, al utilizar la rama docking, podemos personalizar facilmente el entorno de trabajo. Crear nuevas ventanas personalizadas es ahora muy sencillo
 			gracias a las clases <i>UIWindow</i> y <i>UIManager</i>. Esta primera clase es la base de la que hereda cualquier ventana del engine, el <i>UIManager</i> se encargará de gestionar las ventanas.
+			
+			Otra ventaja de utilizar Dear ImGui es que en un futuro podremos usar este mismo sistema de UI para los juegos.
+
 		</p>
+		
+		<p>
+			Una de las cosas más importantes en un motor de videojuegos que utiliza el 'Entity Component System' (ECS) es, a parte de el propio ECS,
+			las herramientas que te permiten trabajar con él, el árbol / jerarquía y el inspector.
+			
+			Tenemos un árbol de entidades completamente funcional, que nos permite ver y organizar los objetos que tenemos, podemos abrir y cerrar 
+			la jerarquía e incluso arrastrar objetos de un lado a otro para moverlos por el árbol.
+
+			Otra de las cosas más importantes es el inspector, éste ha sido bastante complejo de implementar, en c++ no podemos utilizar algunas
+			herramientas que sí ofrecen otros lenguajes como puede ser el caso de C# Reflections, 
+			esto hace que mostrar las variables de los scripts sea mucho más difícil.
+
+			Por supuesto, tanto el árbol como el inspector implican dos grandes avances, por un lado el ECS, podemos decir que Clique Engine funciona
+			junto con uno de los ECS más potentes, <a href="https://www.flecs.dev/flecs/md_docs_2Docs.html">flecs</a>. Este nos permitirá tener un
+			rendimiento asombroso utilizando de manera muy eficiente la memoria del ordenador.
+		</p>
+		<p>
+
+			Por otro lado, también tenemos funcionando scripting con c++, ya podemos crear nuestras clases en el lenguaje nativo del motor y ver reflejado
+			el estado de estas en el inspector.
+
+			Tanto desde el árbol como desde el inspector no solo podremos explorar nuestros objetos, sino que también podemos ver las entidades, componentes
+			y sistemas de flecs.
+
+		</p>
+
+		<div class="row">
+			<div class="col-md-6">
+				<div align="center">
+					<img class="img-fluid" src="files/clique-engine/docking.png"><img>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div align="center">
+					<img class="img-fluid" src="files/clique-engine/screenshot-it2.png"><img>
+				</div>
+			</div>
+		</div>
+
+		<br />
 
 		<div class="row">
 			<div class="col-md-12">

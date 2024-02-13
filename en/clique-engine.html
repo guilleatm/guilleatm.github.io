@@ -42,20 +42,80 @@
 
 	</p>
 
+	<h4>Features</h4>
+
+
+	<div class="row">
+		<div class="col-md-4">
+			<ul>
+				<li>High-performance ECS</li>
+				<li>Native scripting with C++</li>
+				<li>Integrated SDL2</li>
+				<li>Integrated Dear ImGui</li>
+				<li>Customizable editor</li>
+			</ul>
+		</div>
+		<div class="col-md-4">
+			<ul>
+				<li>Inspector</li>
+				<li>Tree / Hierarchy</li>
+				<li>Console</li>
+				<li>Super simple debugging</li>
+			</ul>
+		</div>
+		<div class="col-md-4">
+		</div>
+	</div>
+
+	<hr />
+
 	<h2>Iteration 2</h2>
 
 	<p>
-		In this version, I have implemented a much more robust interface system, in this case, with the help of Dear ImGui.
-		This allows us to efficiently draw the UI on each frame. Additionally, by using the docking branch, we can easily customize
-		the workspace. For now, the console is implemented, but creating new custom windows is very simple thanks to the
-		<i>UIWindow</i> and <i>UIManager</i> classes. The <i>UIWindow</i> class serves as the foundation for any window in the
-		engine, and the <i>UIManager</i> is responsible for managing the windows.
+		In this version, I've implemented a much more robust interface system, in this case, with the help of <a href="https://github.com/ocornut/imgui">Dear ImGui</a>. This allows us to efficiently draw the UI on each frame.
+		Additionally, by using the docking branch, we can easily customize the workspace. Creating new custom windows is now very simple thanks to the <i>UIWindow</i> and <i>UIManager</i> classes. The former is the base from which any engine window inherits, and the <i>UIManager</i> is responsible for managing the windows.
+		
+		Another advantage of using Dear ImGui is that in the future, we'll be able to use this same UI system for games.
+
 	</p>
+
+	<p>
+		One of the most important things in a game engine that uses the Entity Component System (ECS) is, apart from the ECS itself, the tools that allow you to work with it, the tree / hierarchy, and the inspector.
+		
+		We have a fully functional entity tree that allows us to view and organize the objects we have. We can open and close the hierarchy and even drag objects from one place to another to move them around the tree.
+		
+		Another important aspect is the inspector, which has been quite complex to implement. In C++, we cannot use some tools that other languages offer, such as C# Reflections. This makes displaying script variables much more difficult.
+		
+		Of course, both the tree and the inspector imply two great advances. On the one hand, the ECS; we can say that Clique Engine works alongside one of the most powerful ECS, <a href="https://www.flecs.dev/flecs/md_docs_2Docs.html">flecs</a>. This will allow us to achieve amazing performance by efficiently utilizing computer memory.
+	</p>
+	<p>
+
+		On the other hand, we also have scripting working with C++. We can now create our classes in the engine's native language and see their state reflected in the inspector.
+		
+		Both from the tree and from the inspector, we can not only explore our objects but also view the entities, components, and systems of flecs.
+
+	</p>
+
+
+	<div class="row">
+        <div class="col-md-6">
+            <div align="center">
+				<img class="img-fluid" src="../files/clique-engine/docking.png"><img>
+            </div>
+        </div>
+		<div class="col-md-6">
+            <div align="center">
+				<img class="img-fluid" src="../files/clique-engine/screenshot-it2.png"><img>
+            </div>
+        </div>
+    </div>
+
+	<br />
 
     <div class="row">
         <div class="col-md-12">
             <div align="center">
-                <video autoplay controls loop width="100%"><source src="../files/clique-engine/clique-engine-ui.mp4" type="video/mp4"></video>
+				<video autoplay controls loop width="100%"><source src="../files/clique-engine/clique-engine-ui.mp4" type="video/mp4"></video>
             </div>
         </div>
     </div>
