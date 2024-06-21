@@ -8,20 +8,53 @@
 	src: url('fonts/hk-grotesk/HKGrotesk-SemiBold.otf');
 }
 
+
+/* COLOR PALETTE */
+
+:root {
+
+	--color-highlight: #e720a8;
+
+	--background-color: #e4e4e4;
+	--text-color: rgb(0, 0, 0);
+}
+
+
 body {
-	background-color: #deccc1;
+	background-color: var(--background-color);
 	font-family: hk-grotesk;
+
+	color: var(--text-color);
 }
 
-h1, h2, h3, h4, h5, h6
+
+/* LINKS */
+
+a
 {
-	font-family: hk-grotesk-bold;
+	color: var(--text-color);
 }
 
-hr {
-	height:0px;
-	border-radius: 2px;
-	color: #c0b1a8;
-	border: 2px solid currentColor;
-	width: 90%;
+a:hover
+{
+	color: var(--color-highlight);
+}
+
+/*  */
+
+a.icon
+{
+	font-size: 32px;
+	margin: 2px;
+}
+
+/* .card
+{
+	background-color: var(--base-3);
+	color: var(--base-4);
+} */
+
+.btn-secondary:hover
+{
+	background-color: var(--color-highlight);
 }

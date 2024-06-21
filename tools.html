@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-R7K67N6KHP"></script>
@@ -11,55 +11,55 @@
 		gtag('config', 'G-R7K67N6KHP');
 	</script>
 
-	<title>Guillermo Arnau</title>
-	<link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
+    <title>Guillermo Arnau</title>
+    <link rel="icon" href="../favicon.png" type="image/png" sizes="16x16">
 
-
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
 <br>
 
 <div class="container">
-	<div class="row">
-		<div class="col-md-6">
-			<h1>Herramientas</h1>
-		</div>
-		
-		<div class="col-md-6" align="right">
-			<h6>Diseño e implementación</h6>	
-		</div>
-	</div>
+    <div class="row">
+        <div class="col-md-6">
+            <h1>Tools</h1>
+        </div>
+
+        <div class="col-md-6" align="right">
+            <h6>Design and Implementation</h6>
+        </div>
+    </div>
 </div>
+
 
 <div class="container">
 	<h2>Track Editor</h2>
 
 	<p>
-		<i>Track Editor</i> es una herramienta para el editor de Unity con la que facilitar la creación de circuitos para el videojuego <a href="https://play.google.com/store/apps/details?id=com.JesterDay.GPixel">GPixel</a>.
+		<i>Track Editor</i> is a tool for the unity editor that makes it easier to create new tracks for the <a href="https://play.google.com/store/apps/details?id=com.JesterDay.GPixel">GPixel</a> videogame.
 	</p>
 	
 	<div class="row">
 		<div class="col-md-4">
 			<img
-				src="files/tools/gpixel_1.jpg"
+				src="../files/tools/gpixel_1.jpg"
 				class="img-fluid rounded-top"
 				alt=""
 			/>
 		</div>
 		<div class="col-md-4">
 			<img
-				src="files/tools/gpixel_2.jpg"
+				src="../files/tools/gpixel_2.jpg"
 				class="img-fluid rounded-top"
 				alt=""
 			/>
 		</div>
 		<div class="col-md-4">
 			<img
-				src="files/tools/gpixel_3.jpg"
+				src="../files/tools/gpixel_3.jpg"
 				class="img-fluid rounded-top"
 				alt=""
 			/>
@@ -70,90 +70,84 @@
 <hr>
 
 <div class="container">
-	<h2>Event Animator</h2>
+    <h2>Event Animator</h2>
 
-	<p>
-		<i>Event Animator</i> es una herramienta para Unity pensada para crear <strong>cinemáticas dinámicas</strong>, es decir, que no siempre tenemos por qué tener la misma cinemática, sino que dependiendo de diversos factores puede cambiar.
-	</p>
-	
-	<br>
+    <p>
+        <i>Event Animator</i> is a Unity tool designed for creating <strong>dynamic cinematics</strong>, meaning that cinematics can change based on various factors, allowing for flexibility in storytelling.
+    </p>
 
+    <br>
 
-	<div class="row">
-		<div class="col-md-12">
-			<div class="center" align="center">
-				<video autoplay controls loop width="100%"><source src="files/tools/demo.mp4" type="video/mp4"></video>
-			</div>
-		</div>
-	</div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="center" align="center">
+                <video autoplay controls loop width="100%"><source src="../files/tools/demo.mp4" type="video/mp4"></video>
+            </div>
+        </div>
+    </div>
 
-	<br>
+    <br>
 
-	<p>
-		En el vídeo podemos ver un pequeño ejemplo de un posible uso. El jugador se acerca hasta una zona que activa la <i>cinemática</i>, a partir de aquí, lo que va a pasar está predefinido.
+    <p>
+        In the video, you can see a small example of its possible usage. The player approaches an area that triggers the <i>cinematic</i>. From this point, the predefined events unfold.
 
-		La parte interesante de esto es que no es lo mismo que una cinemática convencional, si nos fijamos, no sabemos dónde va a estar el jugador a la hora de empezar la cinemática, el recorrido que hace puede ser diferente, pasa lo mismo con los diálogos, hasta que el jugador no pulsa, el diálogo no avanza, con lo que la duración de la cinemática cambia.
+        What makes this tool interesting is that it's not like a traditional cinematic; it adapts to the player's position and actions. The length of the cinematic can vary based on the player's interactions, such as when the player presses a button to advance the dialogue.
 
+        This tool is extremely powerful because it allows you to <strong>use methods of components directly from the editor</strong>, similar to Unity events, but with the advantage of passing any number of arguments of any type.
 
-		Esta herramienta es extremadamente poderosa ya que nos <strong>permite utilizar los métodos de los componentes desde el editor</strong>, parecido a lo que podemos hacer con los eventos pero con la ventaja de que <strong>podemos pasar cualquier número de argumentos y de cualquier tipo.</strong>
+        Below, you can see how the method "SomeRandomFunction" from the "TestComponent" on the "MY_OBJECT" object is exposed for use in the Event Animator.
+    </p>
 
-		A continuación podemos ver cómo se nos mostraría el método SomeRandomFunction del componente TestComponent que está en el objeto MY_OBJECT.
-	</p>
+    <br>
 
-	<br>
+    <img class="img-fluid" src="../files/tools/method.png"><img>
 
-	<img class="img-fluid" src="files/tools/method.png"><img>
+    <br><br>
 
-	<br><br>
+    <img class="img-fluid" src="../files/tools/overview-event-animator.png"><img>
 
-	<img class="img-fluid" src="files/tools/overview-event-animator.png"><img>
+    <br><br>
 
-	<br><br>
+    <p>
+        In this video, you can see how the cinematic was created and the values of the keyframes.
+    </p>
 
-	<p>
-		En este otro vídeo podemos ver cómo se ha hecho la cinemática mostrada previamente y los valores de los <i>keyframes</i>.
-	</p>
+    <br>
 
-	<br>
-
-	<div class="row">
-		<div class="col-md-12">
-			<div class="center" align="center">
-				<video controls width="100%"><source src="files/tools/know-how.mp4" type="video/mp4"></video>
-			</div>
-		</div>
-	</div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="center" align="center">
+                <video controls width="100%"><source src="../files/tools/know-how.mp4" type="video/mp4"></video>
+            </div>
+        </div>
+    </div>
 
 </div>
 
 <hr>
 
 <div class="container">
-	<h2>GST Editor</h2>
+    <h2>GST Editor</h2>
 
-	<p>
-		El <i>GST Editor</i> o <i>Game State Tree Editor</i> es una herramienta para Unity con la que <strong>podemos crear una estructura de nodos que representa los estados de un juego</strong>. Con los estados creados, podremos transicionar entre ellos haciendo así que los elementos y sucesos de una escena sean distintos dependiendo del estado o fase en el que estemos dentro del juego. 
-	</p>
+    <p>
+        The <i>GST Editor</i> or <i>Game State Tree Editor</i> is a Unity tool that allows you to <strong>create a node structure representing the states of a game</strong>. With the states created, you can transition between them, making game elements and events differ depending on the current state or phase of the game.
+    </p>
 
-	<br>
+    <br>
 
-	<img class="img-fluid" src="files/tools/graph.png"><img>
+    <img class="img-fluid" src="../files/tools/graph.png"><img>
 
-	<br><br>
+    <br><br>
 
-	<p>
-		Un ejemplo de uso muy básico, podemos tener un estado que sea <i>TUTORIAL</i> y otro que sea <i>INICIO</i>, al acceder a una escena, el juego estaría es modo <i>TUTORIAL</i> y al terminarlo, cambiaría el estado a <i>INICIO</i>. La próxima vez que volvamos a esa misma escena, como estaremos en el estado <i>INICIO</i>, no saltará el tutorial.
-	</p>
-	
-	<br>
+    <p>
+        In a basic example, you can have states like <i>TUTORIAL</i> and <i>START</i>. When entering a scene, the game is in the <i>TUTORIAL</i> state. After completing the tutorial, it transitions to the <i>START</i> state. The next time you enter the same scene, it skips the tutorial because it's in the <i>START</i> state.
 
-	<p>
-		Esta herramienta nos <strong>permite preparar toda la lógica que dependa de la fase en la que estamos en el videojuego directamente desde el editor</strong>. Además, <strong>podemos tener varios árboles de estados</strong> y intercambiarlos ya que se utiliza un <i>ScriptableObject</i> como recurso para almacenar los datos.
-	</p>
+        This tool allows you to <strong>set up logic depending on the game phase directly in the Unity editor</strong>. Additionally, you can have multiple state tree setups because it uses a <i>ScriptableObject</i> to store the data.
+    </p>
 
-	<br>
+    <br>
 
-	<img class="img-fluid" src="files/tools/overview-gst-editor.png"><img>
+    <img class="img-fluid" src="../files/tools/overview-gst-editor.png"><img>
 
 </div>
 
