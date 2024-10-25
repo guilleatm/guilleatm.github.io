@@ -58,3 +58,10 @@ a.icon
 {
 	background-color: var(--color-highlight);
 }
+
+.text-highlighted
+{
+	text-decoration: underline;
+	text-decoration-color: var(--color-highlight);
+	text-decoration-thickness: 3px;
+}
