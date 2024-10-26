@@ -1,0 +1,70 @@
+@font-face
+{
+	font-family: hk-grotesk;
+	src: url("../fonts/hk-grotesk/HKGrotesk-Medium.otf");
+}
+
+@font-face
+{
+	font-family: hk-grotesk-bold;
+	src: url("../fonts/hk-grotesk/HKGrotesk-SemiBold.otf");
+}
+
+
+:root
+{
+
+	--color-highlight: #e720a8;
+	--color-highlight-bg: #e0bfd6;
+
+	--background-color: #e4e4e4;
+	--text-color: black;
+}
+
+
+body
+{
+	background-color: var(--background-color);
+	font-family: hk-grotesk;
+	color: var(--text-color);
+}
+
+a:hover
+{
+	color: var(--color-highlight);
+}
+
+.icon
+{
+	font-size: 2.4em;
+	margin: .1em;
+	color: var(--text-color);
+}
+
+.text-highlighted
+{
+	text-decoration: underline;
+	text-decoration-color: var(--color-highlight);
+	text-decoration-thickness: 3px;
+}
+
+.alert-primary
+{
+	color: var(--color-highlight);
+	border-color: var(--color-highlight);
+	background-color: var(--color-highlight-bg);
+}
+
+.btn-primary
+{
+	color: var(--color-highlight);
+	border-color: var(--color-highlight);
+	background-color: var(--color-highlight-bg);
+}
+
+.btn-primary:hover
+{
+	color: white;
+	border-color: var(--color-highlight);
+	background-color: var(--color-highlight)
+}
